@@ -1,0 +1,289 @@
+<!-- 21761022 김정민 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Secret Life of Walter Mitty</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      *{
+        font-family: 'Noto Sans KR', sans-serif;
+        margin : 0;
+        padding : 0;
+      }
+      body{
+        background-image: url('./img/background_intro.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* 로고, 네비게이션 */
+      header{
+        width: 1200px;
+        height: 170px;
+        margin: 0 auto;
+      }
+      #logo{
+        float: left;
+        margin: 60px 0 0 0;
+      }
+      #logo a:hover{
+        animation: logo-opacity 0.8s ;
+      }
+      @keyframes logo-opacity{
+        from{opacity: 100%;}
+        to{opacity: 50%;}
+      }
+      #logo img{
+        width : 150px;
+      }
+      .main_menu{
+        float: right;
+        margin: 74px 0 0 0;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+      .main_menu li{
+        display: inline;
+        margin-left: 100px;
+      }
+      .main_menu a{
+        text-decoration: none;
+        color: white;
+      }
+      .menu_selected{
+        color: white;
+        padding: 6px 0 6px 0;
+        border-bottom: 1px solid white;
+        font-weight: bold;
+      }
+      .main_menu a:hover{
+        padding: 6px 0 6px 0;
+        animation: menu-opacity 0.6s ;
+      }
+      @keyframes menu-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+
+      /* 프로필 */
+      .main_script h1{
+        margin-top: 120px;
+        font-size: 21px;
+        color: white;
+      }
+      .main_script p{
+        font-size: 18px;
+        font-weight: 300;
+        margin: 50px 0 170px 0;
+        color: white;
+        line-height: 180%;
+      }
+      .icon_sd img{
+        width: 80px;
+        margin-bottom: 130px;
+      }
+
+      /* 프로필 제목 */
+      .profile{
+        width: 1200px;
+        height: 1200px;
+        margin: 0 auto;
+        color: white;
+      }
+      #prof_text{
+        width: 600px;
+        height: 200px;
+        float: left;
+      }
+      #prof_text h1{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height:118%;
+      }
+      .profile_han{
+        font-size: 18px;
+        font-weight: 300;
+        opacity: 75%;
+      }
+
+      /* 인물들 소개 (div를 하나 만들어 clear: both 처리)*/
+      .clear{
+        clear: both;
+      }
+      .prof_info{
+        float: left;
+        margin: 0 40px 100px 0;
+      }
+      .prof_thumb{
+        width: 300px;
+      }
+      .prof_info img{
+        width: 260px;
+        margin-bottom: 6px;
+      }
+      .prof_info a{
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: lighter;
+      }
+      .prof li{
+        list-style-type: none;
+      }
+
+      .top_icon{
+        margin: 300px 0 100px 0;
+      }
+      .top_icon a:hover{
+        animation: top-opacity 0.8s;
+      }
+      @keyframes top-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+      .top_icon img{
+        width: 120px;
+      }
+
+      footer{
+        width: 100%;
+        height: 250px;
+        margin-top: 250px;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.45);
+      }
+      #footer_box{
+        width: 1200px;
+        height: 150px;
+        margin: 0 auto;
+      }
+      #address{
+        float: right;
+        margin: 60px 30px 0 0;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1.2px;
+        opacity: 100%;
+      }
+      #footer_title{
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+        float: left;
+        margin: 60px 30px 0 0;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1.2px;
+        opacity: 100%;
+        font-size: 21px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div id='logo'>
+        <a href="./index.html"><img src="./img/logo.png"></a>
+      </div>
+
+      <nav>
+        <ul class='main_menu'>
+          <li><a href='index.html'>HOME</a></li>
+            <li><a href='walter_intro.html'><span class='menu_selected'>INTRO</span></a></li>
+              <li><a href='walter_scene.html'>SCENE</a></li>
+                <li><a href='walter_location.html'>LOCATION</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main_script">
+      <center>
+        <h1>줄거리</h1>
+        <p>‘라이프’ 잡지사에서 16년째 근무 중인 월터 미티.<br>
+          반복되는 일상이지만 ‘상상’을 통해 특별한 순간을 꿈꾸는 그에게<br>
+          폐간을 앞둔 ‘라이프’지의 마지막 호 표지 사진을 찾아오는 미션이 생긴다.<br>
+          평생 국내를 벗어나 본 적 없는 월터는 문제의 사진을 찾아 그린란드, 아이슬란드 등을<br>
+          넘나들며 평소 자신의 상상과는 비교할 수 없는 거대한 어드벤처를 시작한다.<br><br>
+          누구보다 평범한 일상을 살던 월터,<br>
+          그 누구도 겪은 적 없는 특별한 생애 최고의 순간을 맞이하게 된다!
+        <div class="icon_sd">
+          <a href="#prof_text" name='top'><img src="./img/icon_scrolldown.png"></a>
+        </div>
+      </center>
+    </div>
+
+        <div class="profile">
+
+          <div id='prof_text'>
+            <h1>Profile <span class='profile_han'>&nbsp;/ 등장인물</span></h1>
+          </div>
+
+          <div class="clear"></div>
+
+            <div class='prof_info'>
+              <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=129"><img src="./img/profile_walter.png">
+                <p>Ben stiller<br></a>
+                월터 미티 역 &nbsp;&nbsp;&nbsp; 주연 / 감독</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=130150"><img src="./img/profile_shar.png">
+                <p>Kristen Wiig<br></a>
+                셰릴 멜호프 역 &nbsp;&nbsp;&nbsp; 주연</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=1424"><img src="./img/profile_sean.png">
+                <p>Sean Penn<br></a>
+                숀 오코넬 역 &nbsp;&nbsp;&nbsp; 주연</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=1445"><img src="./img/profile_mom.png">
+                <p>Shirley MacLaine<br></a>
+                에드나 미티 역 &nbsp;&nbsp;&nbsp; 주연</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=5585"><img src="./img/profile_adam.png">
+                <p>Adam Scott<br></a>
+                테드 헨드릭스 역 &nbsp;&nbsp;&nbsp; 조연</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=8439"><img src="./img/profile_sister.png">
+                <p>Kathryn Hahn<br></a>
+                오데사 미티 역 &nbsp;&nbsp;&nbsp; 조연</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=52823"><img src="./img/profile_tod.png">
+                <p>Patton Oswalt<br></a>
+                토드 마허 역 &nbsp;&nbsp;&nbsp; 조연</p>
+            </div>
+            <div class='prof_info'>
+                <a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=51056"><img src="./img/profile_josu.png">
+                <p>Adrian Martinez<br></a>
+                헤르난도 역 &nbsp;&nbsp;&nbsp; 조연</p>
+            </div>
+        </div>
+        <center>
+          <div class="top_icon">
+            <a href="#" name='top'><img src="./img/top.png"></a>
+          </div>
+        </center>
+
+        <footer>
+            <div id='footer_box'>
+              <p id='address'>
+                TEL : 010-3498-35XX
+                <br>Email : kjmjm2@naver.com
+                <br>Made by JeongMinKim
+              </p>
+              <p id='footer_title'>
+                The Secret Life of Walter Mitty
+              </p>
+            </div>
+        </footer>
+
+
+
+  </body>
+</html>
