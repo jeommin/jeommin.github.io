@@ -1,0 +1,313 @@
+<!-- 21761022 김정민 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Secret Life of Walter Mitty</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      *{
+        font-family: 'Noto Sans KR', sans-serif;
+        margin : 0;
+        padding : 0;
+      }
+      body{
+        background-image: url('./img/background_scene.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* 로고, 네비게이션 */
+      header{
+        width: 1200px;
+        height: 170px;
+        margin: 0 auto;
+      }
+      #logo{
+        float: left;
+        margin: 60px 0 0 0;
+      }
+      #logo a:hover{
+        animation: logo-opacity 0.8s ;
+      }
+      @keyframes logo-opacity{
+        from{opacity: 100%;}
+        to{opacity: 50%;}
+      }
+      #logo img{
+        width : 150px;
+      }
+      .main_menu{
+        float: right;
+        margin: 74px 0 0 0;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+      .main_menu li{
+        display: inline;
+        margin-left: 100px;
+      }
+      .main_menu a{
+        text-decoration: none;
+        color: white;
+      }
+      .menu_selected{
+        color: white;
+        padding: 6px 0 6px 0;
+        border-bottom: 1px solid white;
+        font-weight: bold;
+      }
+      .main_menu a:hover{
+        padding: 6px 0 6px 0;
+        animation: menu-opacity 0.6s ;
+      }
+      @keyframes menu-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+
+      /* 프로필 제목 */
+      .story{
+        margin: 0 auto;
+        width: 1200px;
+        height: 1200px;
+        color: white;
+      }
+      #story_text{
+        width: 600px;
+        height: 150px;
+        margin: 30px 0 50px 0;
+        float: left;
+      }
+      #story_text h1{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .story_han{
+        font-size: 18px;
+        font-weight: 300;
+        opacity: 75%;
+      }
+
+      /* 인물들 소개 (div를 하나 만들어 clear: both 처리)*/
+      .clear{
+        clear: both;
+      }
+
+      .line_left img{
+        width: 550px;
+        margin-right: 50px;
+      }
+      .line_right img{
+        width: 550px;
+        margin-left: 50px;
+      }
+
+      table{
+        border-collapse: collapse;
+      }
+      .center_line{
+        width: 1px;
+      }
+      .tr_bin{
+        height: 100px;
+      }
+
+      .time_text_right{
+        margin: 0 0 8px 50px;
+      }
+      .time_text_bd_right{
+        margin: 20px 0 10px 25px;
+        border: 0.5px dashed white;
+        width: 200px;
+      }
+      .line_color{
+        background-color: white;
+        opacity: 40%;
+      }
+
+      .time_text_left{
+        margin-right: 50px;
+      }
+      .time_text_bd_left{
+        margin: 20px 25px 10px 0;
+        border: 0.5px dashed white;
+        width: 200px;
+      }
+
+      .end_script{
+        margin-top: 300px;
+      }
+      .end_script h1{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+        font-weight: 400;
+      }
+      .end_script h2{
+        margin-top: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: lighter;
+        opacity: 60%;
+      }
+
+
+      .top_icon{
+        margin: 300px 0 300px 0;
+      }
+      .top_icon a:hover{
+        animation: top-opacity 0.8s;
+      }
+      @keyframes top-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+      .top_icon img{
+        width: 120px;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div id='logo'>
+        <a href="./index_21761022.html"><img src="./img/logo.png"></a>
+      </div>
+
+      <nav>
+        <ul class='main_menu'>
+          <li><a href='index_21761022.html'>HOME</a></li>
+            <li><a href='walter_intro.html'>INTRO</a></li>
+              <li><a href='walter_scene.html'><span class='menu_selected'>SCENE</span></a></li>
+                <li><a href='walter_location.html'>LOCATION</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <div class="story">
+
+          <div id='story_text'>
+            <h1>Story <span class='story_han'>&nbsp;/ 주요 장면</span></h1>
+          </div>
+
+          <div class="clear"></div>
+
+          <table>
+            <tr>
+              <td valign=bottom align=right><div class='time_text_left'>
+                00:10:05;<br>잡지사 LIFE의 사진현상부 직원 월터.<br>지루한 일상의 유일한 탈출구는 멍때리기다.
+              </div><hr class='time_text_bd_left'></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td class='line_right'><img src="./img/scene1.png"></td>
+            </tr>
+
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+
+            <tr>
+              <td class='line_left'><img src="./img/scene2.png"></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td valign=bottom><div class='time_text_right'>
+                00:18:22;<br>사진작가 숀은 월터에게 25번째 필름의 사진을 <br>꼭 표지에 쓰길 부탁하지만 아무리 찾아도 필름이 보이지 않는다.
+              </div><hr class='time_text_bd_right'></td>
+            </tr>
+
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+
+            <tr>
+              <td valign=bottom align=right><div class='time_text_left'>
+                00:36:41;<br>끝내 필름을 찾지 못한 월터는<br>숀을 찾아가기로 결심하고 떠나게 된다.
+              </div><hr class='time_text_bd_left'></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td class='line_right'><img src="./img/scene3.png"></td>
+            </tr>
+
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+
+            <tr>
+              <td class='line_left'><img src="./img/scene4.png"></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td valign=bottom><div class='time_text_right'>
+                00:56:07;<br>월터는 숀을 찾는다는 목적 하나로<br>세계 이곳저곳을 돌아다니며 온몸으로 부딪친다.
+              </div><hr class='time_text_bd_right'></td>
+            </tr>
+
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+
+            <tr>
+              <td valign=bottom align=right><div class='time_text_left'>
+                01:21:06;<br>드디어 숀을 만나게 된 월터. 필름의 위치를 <br>알게되지만, 삶에 있어 더 중요한 것을 배운다.
+              </div><hr class='time_text_bd_left'></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td class='line_right'><img src="./img/scene5.png"></td>
+            </tr>
+
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+
+            <tr>
+              <td class='line_left'><img src="./img/scene6.png"></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td valign=bottom><div class='time_text_right'>
+                01:43:19;<br>숀이 삶의 정수라 표현한 25번째 필름의 <br>사진이 담긴 라이프지의 마지막 호를 보게 된다.
+                <br><br>마지막 표지는 무슨 사진이었을까?
+              </div><hr class='time_text_bd_right'></td>
+            </tr>
+
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+            <tr>
+              <td><div class='tr_bin'></div></td>
+              <td class='line_color'><div class='center_line'></div></td>
+              <td><div class='tr_bin'></div></td>
+            </tr>
+          </table>
+
+          <div class='end_script'><h1>Where is your 25th film?</h1>
+          <h2>당신의 25번째 필름은 어디있나요?</h2></div>
+
+
+          <center>
+            <div class="top_icon">
+              <a href="#" name='top'><img src="./img/top.png"></a>
+            </div>
+          </center>
+
+
+
+  </body>
+</html>

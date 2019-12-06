@@ -1,0 +1,376 @@
+<!-- 21761022 김정민 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Secret Life of Walter Mitty</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      *{
+        font-family: 'Noto Sans KR', sans-serif;
+        margin : 0;
+        padding : 0;
+      }
+      body{
+        background-image: url('./img/background_location_ny.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* 로고, 네비게이션 */
+      header{
+        width: 1200px;
+        height: 170px;
+        margin: 0 auto;
+      }
+      #logo{
+        float: left;
+        margin: 60px 0 0 0;
+      }
+      #logo a:hover{
+        animation: logo-opacity 0.8s ;
+      }
+      @keyframes logo-opacity{
+        from{opacity: 100%;}
+        to{opacity: 50%;}
+      }
+      #logo img{
+        width : 150px;
+      }
+      .main_menu{
+        float: right;
+        margin: 74px 0 0 0;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+      .main_menu li{
+        display: inline;
+        margin-left: 100px;
+      }
+      .main_menu a{
+        text-decoration: none;
+        color: white;
+      }
+      .menu_selected{
+        color: white;
+        padding: 6px 0 6px 0;
+        border-bottom: 1px solid white;
+        font-weight: bold;
+      }
+      .main_menu a:hover{
+        padding: 6px 0 6px 0;
+        animation: menu-opacity 0.6s ;
+      }
+      @keyframes menu-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+
+      .clear{
+        clear: both;
+      }
+
+      .sub_nav{
+        width: 1200px;
+        height: 60px;
+      }
+      .sub_menu{
+        width: 1200px;
+        height: 55px;
+        background-color:
+      }
+      .sub_menu li{
+        float: right;
+        display: inline;
+        font-size: 18px;
+        margin-left: 60px;
+      }
+      .sub_menu a{
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+      }
+      .sub_bd{
+        float: right;
+        border: 0.5px solid white;
+        opacity: 25%;
+        width: 180px;
+      }
+      .sub_menu_selected{
+        font-family: 'EB Garamond', serif;
+        opacity: 40%;
+      }
+      .sub_menu a:hover{
+        animation: sub-menu-opacity 0.6s ;
+      }
+      @keyframes sub-menu-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+
+      /* 프로필 */
+
+
+      /* 프로필 제목 */
+      .location_main{
+        width: 1200px;
+        margin: 0 auto;
+        color: white;
+      }
+      #prof_text{
+        width: 600px;
+        height: 180px;
+        float: left;
+        margin-top: 40px;
+      }
+      #prof_text h1{
+        font-size: 60px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        line-height:118%;
+      }
+      .profile_han{
+        font-size: 18px;
+        font-weight: 300;
+        opacity: 75%;
+      }
+
+      /* 인물들 소개 (div를 하나 만들어 clear: both 처리)*/
+      .clear{
+        clear: both;
+      }
+      .loca_content{
+        width: 1200px;
+      }
+
+      .loca_info td img{
+        width: 750px;
+        float: right;
+      }
+      .loca_info{
+        vertical-align: bottom;
+      }
+      .loca_info h2{
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 26px;
+      }
+      .loca_info_bd{
+        border: 0.5px solid white;
+        width: 50px;
+        margin: 30px 0 0 0;
+      }
+      .loca_info p{
+        margin-top: 22px;
+        font-weight: lighter;
+      }
+      .loca_img{
+        float: right;
+      }
+      .loca_img img{
+          width: 750px;
+      }
+      .loca_bin{
+        height: 30px;
+      }
+      .prof_thumb{
+        width: 300px;
+      }
+
+      .img_scale a:hover img{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: transform 0.3s;
+      }
+      .img_scale{
+        width: 450px;
+        overflow: hidden;
+      }
+
+      .top_icon a:hover{
+        animation: top-opacity 0.8s;
+      }
+      @keyframes top-opacity{
+        from{opacity: 100%;}
+        to{opacity: 30%;}
+      }
+      .top_icon img{
+        width: 150px;
+        margin: 200px 0 200px 0;
+      }
+
+      footer{
+        width: 100%;
+        height: 250px;
+        margin-top: 50px;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.45);
+      }
+      #footer_box{
+        width: 1200px;
+        height: 150px;
+        margin: 0 auto;
+      }
+      #address{
+        float: right;
+        margin: 60px 30px 0 0;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1.2px;
+        opacity: 100%;
+      }
+      #footer_title{
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+        float: left;
+        margin: 60px 30px 0 0;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1.2px;
+        opacity: 100%;
+        font-size: 21px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div id='logo'>
+        <a href="./index_21761022.html"><img src="./img/logo.png"></a>
+      </div>
+
+      <nav>
+        <ul class='main_menu'>
+          <li><a href='index_21761022.html'>HOME</a></li>
+            <li><a href='walter_intro.html'>INTRO</a></li>
+              <li><a href='walter_scene.html'>SCENE</a></li>
+                <li><a href='walter_location.html'><span class='menu_selected'>LOCATION</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class='sub_nav'>
+      <ul class='sub_menu'>
+            <li><a href='walter_location_ice.html'>Iceland</a></li>
+            <li><a href='walter_location.html'><span class='sub_menu_selected'>New York</span></a></li>
+      </ul>
+      <center><hr class='sub_bd'></center>
+    </header>
+
+        <div class="location_main">
+
+          <div id='prof_text'>
+            <h1>New York<span class='profile_han'>&nbsp;&nbsp;&nbsp; / 뉴욕</span></h1>
+          </div>
+
+          <div class="clear"></div>
+
+          <table class='loca_content'>
+            <tr class='loca_info'>
+              <td><h2>00:03:33;</h2>
+                <hr class='loca_info_bd'>
+                <p>Subway Station, West 125th Street<br>
+                (formerly Manhattan Street)and Broadway, Harlem.
+                </p>
+              </td>
+              <td><img src="./img/loca_ny1.png"></td>
+            </tr>
+
+            <tr class='loca_bin'>
+              <td></td><td></td>
+            </tr>
+
+            <tr class='loca_info'>
+              <td><h2>00:04:50;</h2>
+                <hr class='loca_info_bd'>
+                <p>Broadway and Tiemann Place, Harlem.
+                </p>
+              </td>
+              <td><img src="./img/loca_ny2.png"></td>
+            </tr>
+
+            <tr class='loca_bin'>
+              <td></td><td></td>
+            </tr>
+
+            <tr class='loca_info'>
+              <td><h2>00:06:23;</h2>
+                <hr class='loca_info_bd'>
+                <p>Time & Life Building, 1271 6th Avenue<br>
+                  (btw West 50th and 51st Streets) Manhattan.</p>
+              </td>
+              <td><img src="./img/loca_ny3.png"></td>
+            </tr>
+
+            <tr class='loca_bin'>
+              <td></td><td></td>
+            </tr>
+
+            <tr class='loca_info'>
+              <td><h2>00:18:26;</h2>
+                <hr class='loca_info_bd'>
+                <p>1251 6th Avenue and West 50th Street, Manhattan.<br>
+                </p>
+              </td>
+              <td><img src="./img/loca_ny4.png"></td>
+            </tr>
+
+            <tr class='loca_bin'>
+              <td></td><td></td>
+            </tr>
+
+            <tr class='loca_info'>
+              <td><h2>01:35:05;</h2>
+                <hr class='loca_info_bd'>
+                <p>Beethoven Pianos, 2403 3rd Avenue and
+                  <br>Bruckner Blvd, Bronx.
+                </p>
+              </td>
+              <td><img src="./img/loca_ny5.png"></td>
+            </tr>
+
+            <tr class='loca_bin'>
+              <td></td><td></td>
+            </tr>
+
+            <tr class='loca_info'>
+              <td><h2>01:41:10;</h2>
+                <hr class='loca_info_bd'>
+                <p>6th Avenue (btw West 51st & 52nd Streets) Manhattan.
+                </p>
+              </td>
+              <td><img src="./img/loca_ny6.png"></td>
+            </tr>
+          </table>
+        </div>
+
+        <center>
+          <div class="top_icon">
+            <a href="#" name='top'><img src="./img/top.png"></a>
+          </div>
+        </center>
+
+        <footer>
+            <div id='footer_box'>
+              <p id='address'>
+                TEL : 010-3498-35XX
+                <br>Email : kjmjm2@naver.com
+                <br>Made by JeongMinKim
+              </p>
+              <p id='footer_title'>
+                The Secret Life of Walter Mitty
+              </p>
+            </div>
+        </footer>
+
+
+
+
+  </body>
+</html>
